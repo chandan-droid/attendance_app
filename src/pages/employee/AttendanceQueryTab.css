@@ -1,0 +1,143 @@
+.attendance-query-tab {
+  max-width: 1400px;
+}
+
+.filter-card {
+  margin-bottom: 24px;
+}
+
+.filter-card .form-group {
+  max-width: 300px;
+}
+
+.queries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 24px;
+}
+
+.query-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  border-left: 4px solid #f59e0b;
+}
+
+.query-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.query-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.query-date {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.query-date svg {
+  color: #f59e0b;
+  margin-top: 2px;
+}
+
+.date-text {
+  font-size: 12px;
+  color: #718096;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.date-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.query-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.query-reason {
+  padding: 16px;
+  background: #fffbeb;
+  border-radius: 10px;
+  border-left: 3px solid #f59e0b;
+}
+
+.query-reason strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #92400e;
+  font-size: 13px;
+}
+
+.query-reason p {
+  color: #78350f;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.query-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-subtitle {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  margin-top: 8px;
+  align-items: flex-start;
+}
+
+.info-box svg {
+  color: #2563eb;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-box div {
+  font-size: 13px;
+  color: #1e40af;
+  line-height: 1.5;
+}
+
+.info-box strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .queries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .query-header {
+    flex-direction: column;
+  }
+}
